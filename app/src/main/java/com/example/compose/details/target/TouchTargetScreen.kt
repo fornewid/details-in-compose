@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -405,6 +406,11 @@ fun TouchTargetScreen6_A() {
                 )
             }
         }
+        Box(
+            modifier = Modifier
+                .requiredSize(48.dp)
+                .border(width = 0.1.dp, color = Color.LightGray),
+        )
     }
 }
 
@@ -435,6 +441,28 @@ fun TouchTargetScreen6_B() {
                     modifier = Modifier.border(width = 1.dp, color = Color.Red),
                 )
             }
+        }
+        Box(
+            modifier = Modifier
+                .requiredSize(48.dp)
+                .border(width = 0.1.dp, color = Color.LightGray),
+        )
+    }
+}
+
+@Preview(widthDp = 200, heightDp = 100)
+@Composable
+fun TouchTargetScree7() {
+    Row(
+        modifier = Modifier.fillMaxSize(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.Center,
+    ) {
+        Box(Modifier.size(100.dp), Alignment.Center) {
+            TouchTargetScreen6_A()
+        }
+        Box(Modifier.size(100.dp), Alignment.Center) {
+            TouchTargetScreen6_B()
         }
     }
 }
