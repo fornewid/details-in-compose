@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.compose.details.target.TouchTargetScreen5_C
+import com.example.compose.details.colors.ColorSchemeScreen_2
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,8 @@ class MainActivity : ComponentActivity() {
 //            TextStyleDetailsScreen()
 //            PreviewInternalsScreen()
 //            CustomSnackbarScreen5_E()
-            TouchTargetScreen5_C()
+//            TouchTargetScreen5_C()
+            ColorSchemeScreen_2()
         }
     }
 }
