@@ -4,13 +4,13 @@
 agp = "8.7.3"
 
 # Kotlin
-kotlin = "2.0.21"
+kotlin = "2.1.10"
 
 # Jetapck
-androidx-activity = "1.9.3"
+androidx-activity = "1.10.1"
 androidx-core = "1.15.0"
 androidx-lifecycle = "2.8.7"
-compose-bom = "2024.12.01"
+compose-bom = "2025.03.00"
 
 # Test
 junit = "4.13.2"
